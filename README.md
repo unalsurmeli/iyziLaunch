@@ -80,4 +80,7 @@ react-native run-android
   </table>
 </p>
 
+[![Watch the video](https://github.com/unalsurmeli/iyziLaunch/blob/master/src/assets/images/launch.png)](https://youtu.be/nfo5l0nRUpo?t=7)
+
+
 license:mit
