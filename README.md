@@ -80,6 +80,7 @@ react-native run-android
   </table>
 </p>
 
+### Watch the video
 [![Watch the video](https://github.com/unalsurmeli/iyziLaunch/blob/master/src/assets/images/Screen%20Shot%202018-12-19%20at%2018.18.32.png)](https://youtu.be/nfo5l0nRUpo?t=7)
 
 
