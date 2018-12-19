@@ -1,0 +1,28 @@
+{
+"extends": [
+  "eslint:recommended",
+  "plugin:react/recommended",
+  "rallycoding",
+  "plugin:jest/recommended"
+  ],
+"rules": {
+   "arrow-body-style": 0,
+    max-len: [2, 1000],
+   "react/require-extension": "off",
+   "jest/no-disabled-tests": "warn",
+   "jest/no-focused-tests": "error",
+   "jest/no-identical-title": "error",
+   "jest/prefer-to-have-length": "warn",
+   "jest/valid-expect": "error"
+   },
+"env": {
+  "browser": true,
+  "es6": true
+},
+"globals": {
+      "fetch": true,
+      "node": true,
+      "_": false,
+      "jest/globals": true
+    },
+}

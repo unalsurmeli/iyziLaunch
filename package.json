@@ -1,0 +1,61 @@
+{
+  "name": "iyziLaunch",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "firebase": "^4.9.1",
+    "moment": "^2.23.0",
+    "moment-timezone": "^0.5.23",
+    "prop-types": "^15.6.2",
+    "react": "16.6.3",
+    "react-native": "0.57.8",
+    "react-native-elements": "^0.19.1",
+    "react-native-exit-app": "^1.0.0",
+    "react-native-loader": "^1.2.1",
+    "react-native-router-flux": "^4.0.6",
+    "react-native-tab-navigator": "^0.3.4",
+    "react-native-tab-view": "^1.3.1",
+    "react-native-vector-icons": "^6.1.0",
+    "react-redux": "^6.0.0",
+    "react-timer-mixin": "^0.13.4",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "react-test-renderer": "^16.6.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-preset-react-native": "^4.0.1  ",
+    "eslint": "^5.10.0",
+    "eslint-config-rallycoding": "^3.2.0",
+    "eslint-plugin-jest": "^21.27.2",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "jest-react-native": "^18.0.0",
+    "metro-react-native-babel-preset": "0.48.5"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest --verbose --coverage",
+    "test:update": "jest --verbose --coverage --updateSnapshot",
+    "test:watch": "jest --verbose --watch",
+    "coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html"
+  },
+  "jest": {
+    "preset": "react-native",
+    "cacheDirectory": "./cache",
+    "coveragePathIgnorePatterns": [
+      "./app/utils/vendor"
+    ],
+    "testPathIgnorePatterns": [
+      "node_modules/"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|my-project|react-native-button)/)"
+    ],
+    "setupFiles": [
+      "./node_modules/react-native/jest/setup.js"
+    ]
+  }
+}
