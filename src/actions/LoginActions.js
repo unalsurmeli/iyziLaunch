@@ -53,7 +53,7 @@ const loginUserFail = (dispatch, response) => {
   dispatch({ type: LOGIN_USER_FAIL, payload: response });
 };
 
-const loginUserSuccess = (dispatch, response) => {
-  dispatch({ type: LOGIN_USER_SUCCESS, payload: response });
-  Actions.main({ type: 'reset' });
+const loginUserSuccess = (dispatch, user) => {
+  dispatch({ type: LOGIN_USER_SUCCESS, payload: user });
+  Actions.main({ user });
 };

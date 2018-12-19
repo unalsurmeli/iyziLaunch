@@ -54,5 +54,5 @@ const registerUserFail = (dispatch, response) => {
 
 const registerUserSuccess = (dispatch, response) => {
   dispatch({ type: REGISTER_USER_SUCCESS, payload: response });
-  Actions.login({ type: 'reset' });
+  Actions.login({ response });
 };

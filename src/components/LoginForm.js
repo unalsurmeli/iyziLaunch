@@ -51,7 +51,7 @@ class LoginForm extends Component {
         <Button
           title="Login"
           textStyle={styles.buttonTextStyle}
-          onPress={this.onRegisterAccountPress.bind(this)}
+          onPress={this.onLoginAccountPress.bind(this)}
           fontFamily="Helvetica"
           buttonStyle={styles.buttonStyle}
         />
@@ -94,15 +94,7 @@ class LoginForm extends Component {
           </View>
         </View>
         <View>
-          <View
-            style={{
-              flexDirection: 'row',
-              justifyContent: 'center',
-              marginTop: 10,
-              marginLeft: 10,
-              marginRight: 10
-            }}
-          >
+          <View style={styles.buttonContainerStyle} >
             <TouchableOpacity onPress={this.onCreateAccountPress.bind(this)}>
               <Text style={{ color: '#cc3641' }}>Create Account</Text>
             </TouchableOpacity>
